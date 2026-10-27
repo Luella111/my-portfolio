@@ -382,21 +382,19 @@ body.projects-page header h1 {
 /* ===== Home page introduction layout ===== */
 main .intro {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 28px;
+    gap: 18px;
 }
-
 main .intro > img {
     display: block;
     width: 240px;
-    max-width: 40%;
+    max-width: 100%;
     height: auto;
-    flex: 0 0 240px;
+    flex: 0 1 auto;
     object-fit: cover;
     border-radius: 6px;
 }
-
 main .intro > div {
     flex: 1;
     min-width: 0;
