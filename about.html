@@ -76,6 +76,34 @@
                     <td>Beginner</td>
                     <td>Self-practice</td>
                 </tr>
+            <!-- Background Music -->
+<audio id="backgroundMusic" loop preload="none">
+    <source src="./background-music.mp3" type="audio/mpeg">
+    Your browser does not support audio playback.
+</audio>
+
+<button id="musicButton" class="music-toggle" type="button">
+    ▶ Play Music
+</button>
+
+<script>
+    const music = document.getElementById("backgroundMusic");
+    const musicButton = document.getElementById("musicButton");
+
+    musicButton.addEventListener("click", async function () {
+        if (music.paused) {
+            try {
+                await music.play();
+                musicButton.textContent = "Ⅱ Pause Music";
+            } catch (error) {
+                musicButton.textContent = "▶ Try Music Again";
+            }
+        } else {
+            music.pause();
+            musicButton.textContent = "▶ Play Music";
+        }
+    });
+</script>
             </tbody>
         </table>
     </main>
