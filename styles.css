@@ -446,3 +446,13 @@ main .intro > img {
 main .intro > div {
     width: 100%;
 }
+
+/* Hover effect for hobby image */
+.hobby-photo {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hobby-photo:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
