@@ -67,7 +67,7 @@ nav a:hover {
 
 /* ===== Name in header ===== */
 header h1 {
-    font-family: 'Playfair Display SC', serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--white);
     text-align: center;
     font-size: clamp(2rem, 5vw, 3.5rem);
