@@ -287,6 +287,21 @@ main h2 {
         padding: 20px 12px;
         overflow-wrap: anywhere;
     }
+    form {
+    width: 100%;
+    min-width: 0;
+    }
+
+    input, textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    }
+
+    button {
+    max-width: 100%;
+    white-space: normal;
+    }
 }
 
 /* Prevent mobile pages from overflowing */
@@ -312,4 +327,47 @@ form, input, textarea, button {
 img {
     max-width: 100%;
     height: auto;
+}
+
+
+/* ===== Home page introduction ===== */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.intro img {
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 6px;
+}
+
+.intro > div {
+    flex: 1;
+    min-width: 0;
+}
+
+/* ===== Home page on mobile ===== */
+@media (max-width: 600px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .intro img {
+        width: 200px;
+    }
+
+    .intro > div {
+        width: 100%;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+        overflow-wrap: break-word;
+    }
 }
