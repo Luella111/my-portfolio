@@ -288,3 +288,28 @@ main h2 {
         overflow-wrap: anywhere;
     }
 }
+
+/* Prevent mobile pages from overflowing */
+html {
+    width: 100%;
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
+
+main, header, footer {
+    min-width: 0;
+}
+
+form, input, textarea, button {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
