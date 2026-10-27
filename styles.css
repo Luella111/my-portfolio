@@ -447,12 +447,16 @@ main .intro > div {
     width: 100%;
 }
 
-/* Hover effect for hobby image */
-.hobby-photo {
+/* Hobby picture hover effect */
+img.hobby-photo {
+    display: block;
+    max-width: 100%;
+    height: auto;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.hobby-photo:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
+img.hobby-photo:hover {
+    transform: scale(1.1);
+    opacity: 0.6;
+    cursor: pointer;
 }
