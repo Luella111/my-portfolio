@@ -329,24 +329,33 @@ img {
     height: auto;
 }
 
+/* ===== Home page introduction layout ===== */
+main .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
 
-/* ===== Home page introduction ===== */
+main .intro > img {
+    display: block;
+    width: 240px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+main .intro > div {
+    width: 100%;
+    min-width: 0;
+}
+
 @media (max-width: 600px) {
-    .intro {
-        flex-direction: column;
-        align-items: center;
-        gap: 18px;
-    }
-
-    .intro img {
+    main .intro > img {
         width: 200px;
     }
 
-    .intro > div {
-        width: 100%;
-    }
-
-    .intro h2 {
+    main .intro h2 {
         font-size: 1.5rem;
         overflow-wrap: break-word;
     }
